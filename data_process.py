@@ -6,6 +6,7 @@ Created on Thu Sep 17 19:37:39 2020
 """
 import numpy as np
 import  pandas as pd
+import  json
 import os
 
 clinical = '../clinical.cart.2020-09-17.json'
@@ -18,6 +19,8 @@ meta_data = pd.read_json(meta)
 data_dir = '../data/'
 file_list = os.listdir(data_dir)
 
+for i in range(len(file_list))
+    print(i)
 
 
 
