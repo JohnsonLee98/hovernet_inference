@@ -19,7 +19,7 @@ meta_data = pd.read_json(meta)
 data_dir = '../data/'
 file_list = os.listdir(data_dir)
 
-for i in range(len(file_list))
+for i in range(len(file_list)):
     print(i)
 
 
