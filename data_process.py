@@ -33,58 +33,58 @@ for i in range(100):
     src_file = os.path.join(data_dir,src_name)
     
     if(tumor_stage == 'not reported'):
-        fpath = os.path.join(data_dir,0)
+        fpath = os.path.join(data_dir,'0')
         if not os.path.exists(fpath):
             os.makedirs(fpath)  
         shutil.move(src_file,fpath)
     elif (tumor_stage == 'stage i'):
-        fpath = os.path.join(data_dir,1)
+        fpath = os.path.join(data_dir,'1')
         if not os.path.exists(fpath):
             os.makedirs(fpath)  
         shutil.move(src_file,fpath)
     elif (tumor_stage == 'stage iia'):
-        fpath = os.path.join(data_dir,2)
+        fpath = os.path.join(data_dir,'2')
         if not os.path.exists(fpath):
             os.makedirs(fpath)  
         shutil.move(src_file,fpath)
 
     elif (tumor_stage == 'stage iib'):
-        fpath = os.path.join(data_dir,2)
+        fpath = os.path.join(data_dir,'2')
         if not os.path.exists(fpath):
             os.makedirs(fpath) 
         shutil.move(src_file,fpath)
     elif (tumor_stage == 'stage ii'):
-        fpath = os.path.join(data_dir,2)
+        fpath = os.path.join(data_dir,'2')
         if not os.path.exists(fpath):
             os.makedirs(fpath)
         shutil.move(src_file,fpath)
     elif (tumor_stage == 'stage iii'):
-        fpath = os.path.join(data_dir,3)
+        fpath = os.path.join(data_dir,'3')
         if not os.path.exists(fpath):
             os.makedirs(fpath)  
         shutil.move(src_file,fpath)
     elif (tumor_stage == 'stage iiia'):
-        fpath = os.path.join(data_dir,3)
+        fpath = os.path.join(data_dir,'3')
         if not os.path.exists(fpath):
             os.makedirs(fpath)  
         shutil.move(src_file,fpath)
     elif (tumor_stage == 'stage iiib'):
-        fpath = os.path.join(data_dir,3)
+        fpath = os.path.join(data_dir,'3')
         if not os.path.exists(fpath):
             os.makedirs(fpath)
         shutil.move(src_file,fpath)
     elif (tumor_stage == 'stage iv'):
-        fpath = os.path.join(data_dir,4)
+        fpath = os.path.join(data_dir,'4')
         if not os.path.exists(fpath):
             os.makedirs(fpath)  
         shutil.move(src_file,fpath)
     elif (tumor_stage == 'stage iva'):
-        fpath = os.path.join(data_dir,4)
+        fpath = os.path.join(data_dir,'4')
         if not os.path.exists(fpath):
             os.makedirs(fpath)
         shutil.move(src_file,fpath)
     elif (tumor_stage == 'stage ivb'):
-        fpath = os.path.join(data_dir,4)
+        fpath = os.path.join(data_dir,'4')
         if not os.path.exists(fpath):
             os.makedirs(fpath) 
         shutil.move(src_file,fpath)
