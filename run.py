@@ -550,10 +550,10 @@ class InferWSI(object):
             
             # uncomment below if you want to save results per tile
 
-            # np.savez('%s/%s/%s_%s.npz' % (
-            # self.output_dir, self.basename, self.basename, str(tile)),
-            # mask=mask_list, type=type_list, centroid=cent_list
-            # )
+            np.savez('%s/%s/%s_%s.npz' % (
+            self.output_dir, self.basename, self.basename, str(tile)),
+            mask=mask_list, type=type_list, centroid=cent_list
+            )
 
         if self.ds_factor != 1:
             cent_list = self.ds_factor * np.array(cent_list)
@@ -562,6 +562,9 @@ class InferWSI(object):
             self.output_dir, self.basename, self.basename),
             mask=mask_list_all, type=type_list_all, centroid=cent_list_all
             )
+        print('successfully process %s/%s/%s.npz' % (
+            self.output_dir, self.basename, self.basename))
+            
     ####
 
     def load_model(self):
