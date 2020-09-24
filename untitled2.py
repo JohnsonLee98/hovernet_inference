@@ -11,7 +11,7 @@ import  json
 import os
 import shutil
 
-data_dir = '../output_dir/1'
+data_dir = '../output_dir/2'
 file_list = os.listdir(data_dir)
 etx = '.npz'
 for file in file_list:
