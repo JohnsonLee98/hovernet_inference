@@ -11,11 +11,13 @@ import  json
 import os
 import shutil
 
-data_dir = '../output_dir/0'
+data_dir = '../output_dir/1'
 file_list = os.listdir(data_dir)
 etx = '.npz'
 for file in file_list:
     file_name = file+'/'+file+etx
+    
     src_path = os.path.join(data_dir,file_name)
-    shutil.move(src_path,data_dir)
+    if(os.path.exists(src_path)):
+        shutil.move(src_path,data_dir)
     
